@@ -1,10 +1,7 @@
-// Variables
+// Building the grid
 
 const container = document.querySelector(".container");
-document.querySelector(".btn").addEventListener("click", buildGrid);
 
-
-// Functions
 function getSquaresbySide () {
     let squaresPerSide = Math.min(50,parseInt(prompt("How many squares? (Max. 50)")));
     return squaresPerSide;
@@ -26,3 +23,16 @@ function buildGrid() {
     squaresPerSide = getSquaresbySide();
     createDivs(squaresPerSide);
 };
+
+document.querySelector(".btn").addEventListener("click", buildGrid);
+
+// Hover Effect
+
+
+function changeBackground(e) {
+    if (!e.target.classList.contains("divs")) return;
+    e.target.classList.add("hover");
+};
+
+document.addEventListener("mouseover", changeBackground);
+

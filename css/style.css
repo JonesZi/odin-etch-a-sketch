@@ -34,3 +34,7 @@ body {
     border: 1px solid black;
     flex: 0 0 auto;
 }
+
+.hover {
+    background-color: black;
+}
