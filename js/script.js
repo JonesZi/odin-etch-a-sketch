@@ -10,7 +10,7 @@ function getSquaresbySide () {
     return squaresPerSide;
 };
 
-function createGrid(squaresPerSide) {
+function createDivs(squaresPerSide) {
     const numberOfDivs = squaresPerSide * squaresPerSide;
     const width = 640 / squaresPerSide;
     for (let i = 0; i < numberOfDivs; i++) {
@@ -24,5 +24,5 @@ function createGrid(squaresPerSide) {
 function buildGrid() {
     container.replaceChildren();
     squaresPerSide = getSquaresbySide();
-    createGrid(squaresPerSide);
+    createDivs(squaresPerSide);
 };
