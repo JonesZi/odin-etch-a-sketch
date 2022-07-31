@@ -26,9 +26,11 @@ body {
     width: 640px;
     height: 640px;
     background-color: white;
+    flex-wrap: wrap;
 }
 
 .divs {
     box-sizing: border-box;
     border: 1px solid black;
+    flex: 0 0 auto;
 }
